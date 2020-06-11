@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Rasoi!</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+      <nav class="menu">
+          <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+          </button>
+          <ul id="menu-list">
+            <li>
+              <a href="page1.html">Starters</a>
+            </li>
+            <li>
+              <a href="page2.html">MainCourse</a>
+            </li>
+            <li>
+              <a href="page3.html">Bevarages</a>
+            </li>
+            <li>
+              <a href="page4.html">Desserts</a>
+            </li>
+            <li>
+              <a href="page5.html">Reservations</a>
+            </li>
+          </ul>
+        </nav>
+    <div class="top">
+      <header class="hero">
+        <p>Rasoi</p>
+        <p>Good Food Good Mood!</p>
+      </header>
+      <div class="cta cta1">
+        <img class="img-starter" src="img/starter.jpg" alt="Our starters">
+      </div>
+      <div class="cta cta2">
+        <img class="img-desert" src="img/desert.jpg" alt="Our desert">
+      </div>
+
+    </div>
+
+    <section class="features">
+      <div class="feature">
+        <span class="icon">🌯🧆</span>
+        <h3>Starters</h3>
+        <p>Well, a small dish of food or a drink taken before a meal or the main course of a meal, these tit-bits of food are known to increase appetite and thus known as Appetizers, which is just English to the French word Apéritif or Hors d'oeuvre or simply a Starter in colloquial.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍱</span>
+        <h3>Maincourse</h3>
+        <p>The main dish is usually the heaviest, heartiest, and most complex or substantial dish in a meal. The main ingredient is usually meat, fish or another protein source. It is most often preceded by an appetizer, soup or salad, and followed by a dessert.In the United States and Canada (except Quebec), the main course is traditionally called an "entrée".English-speaking Québécois follow the modern French use of the term entrée to refer to a dish served before the main course.According to linguist Dan Jurafsky, North American usage ("entrée") retains the original French meaning of a substantial meat course.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍾</span>
+        <h3>Beverages</h3>
+        <p>A liquid to consume, usually excluding water; a drink. This may include tea, coffee, liquor, beer, milk, juice, or soft drinks.(slang, archaic) A treat, or drink money.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍰</span>
+        <h3>Desserts</h3>
+        <p>Dessert is a course that concludes a meal. The course usually consists of sweet foods, such as confections, and possibly a beverage such as dessert wine or liqueur; however, in the United States it may include coffee, cheeses, nuts, or other savory items regarded as a separate course elsewhere. In some parts of the world, such as much of central and western Africa, and most parts of China, there is no tradition of a dessert course to conclude a meal.</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="img/food.jpg" alt="Indian Food" class="about__mockup">
+      <div class="about__details">
+        <h2>We are bringing our best for you</h2>
+        <p>Visit us soon</p>
+        
+        <button class="button">Learn More →</button>
+      </div>
+    </section>
+    
+    
+  </div>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+</body>
+
+</html>
